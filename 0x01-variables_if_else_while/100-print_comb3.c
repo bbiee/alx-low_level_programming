@@ -1,33 +1,37 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  *  main - entry point
  *
- *  Return: alway returns 0
+ *  Return: always returns 0 (Success)
  *
  */
 
 int main(void)
 {
-	int i;
-	int j;
+	int d, p;
 
-	for (i = 10; i <= 19; i++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		for (j = 10; j <= 19; j++)
+		for (p = d + 1; p <= '9'; j++)
 		{
-			if ((j & 10) > (i & 10))
+			if (p != d)
 			{
-				putchar((i & 10) + '0');
-				putchar((j % 10) + '0');
-				if (i != 18 || j != 19)
-				{
+				putchar(d);
+				putchar(p);
+
+				if (d == '8' && p == '9')
+					continue;
+
 					putchar(',');
 					putchar(' ');
-				}
+				
 			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
