@@ -11,26 +11,21 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 10; i <= 19; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 10; j <= 19; j++)
 		{
-			for (k = 0; k <= 9; k++)
-			{
-				if (k > j && j > i)
+				if ((j & 10) > (i & 10))
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (i != 7 || j != 8 || k != 9)
+					putchar((i & 10) + '0');
+					putchar((j % 10) + '0');
+					if (i != 18 || j != 19)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-			}
 		}
 	}
 	putchar('\n');
