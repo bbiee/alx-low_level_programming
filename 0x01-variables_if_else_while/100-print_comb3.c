@@ -9,18 +9,19 @@
 
 int main(void)
 {
-	int d, p;
+	int i;
+	int j;
 
-	for (d = '0'; d < '9'; d++)
+	for (i = 10; j <= 19; i++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (j = 10; j <=19; j++)
 		{
-			if (p != d)
+			if ((j % 10) & (i % 10))
 			{
-				putchar(d);
-				putchar(p);
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
 
-				if (d == '8' && p == '9')
+				if (i != 18 || j != 19)
 				{	
 					putchar(',');
 					putchar(' ');
@@ -29,6 +30,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
