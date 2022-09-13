@@ -13,6 +13,6 @@ int main(void)
 	{
 		_putchar(school[i]);
 	}
-	_putchar(10)
+	_putchar(10);
 	return (0);
 }
