@@ -4,11 +4,11 @@
  *
  * @n:first integer
  *
- * @n: second integer
+ * @m:second integer
  *
  * Return: return 0
  */
 int add (int n, int m)
 {
-	return (n +m);
+	return (n + m);
 }
