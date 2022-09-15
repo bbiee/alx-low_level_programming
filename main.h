@@ -2,7 +2,7 @@
  *
  *  * File:main.h
  *
- *  Author: Prince (Arinze) Udeh
+ *  Author: Oparaji Deborah
  *
  * Desc:header file containing functions declaration
  *
