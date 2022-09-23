@@ -3,9 +3,9 @@
 /**
  * _strncpy - C function that copies a string, including the 
  * terminating null byte, using at most an inputted number of bytes.
- * If the length of the source stringis less than the maximum byte number,
+ * If the length of the source string is less than the maximum byte number,
  * the remainder of the destination string is filled with null bytes.
- * Works identically to the standard libraryfunction 'strncpy'.
+ * Works identically to the standard library function 'strncpy'.
  * @dest: buffer storing the string copy
  * @src: the source string
  * @n: max number of byte copied
