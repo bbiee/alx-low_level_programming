@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		else
 		{
 			printf("Error\n");
-			return (i);
+			return (1);
 		}
 		i++;
 	}
